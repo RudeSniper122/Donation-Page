@@ -1,0 +1,182 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --b-color: #ebe4e1;
+  --b-temp-color: #eaeaea;
+  --light-nav: #ead8d6;
+  --nav: #df4b4b;
+}
+body{
+  background-color: var(--b-temp-color);
+  font-family: sans-serif;
+  font-size: 2rem
+}
+
+/* dashboard section */
+.dashboard{
+  padding: 25px 30px 40px 30px;
+  background-color: var(--nav);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.dashboardText h2{
+  margin-bottom: 10px;
+}
+.dashboardImg{
+  color: #fff;
+  padding: 25px;
+  height: 100px;
+  border-radius: 30px;
+}
+
+
+
+/* main container */
+.mainContainer{
+  background-color: var(--b-temp-color);
+  border-radius: 60px 60px 0 0;
+}
+
+.firstHeading{
+  background-color: var(--b-temp-color);
+  padding: 50px 0 35px 60px;
+  position: relative;
+  z-index: 4;
+}
+
+/* slide section */
+.xyz{
+  margin: 20px 20px 0;
+  height: 400px;
+  background-color: #d3c3dc;
+  border-radius: 30px;
+}
+.xyz img{
+  height: 400px;
+  width: 100%;
+  border-radius: 30px;
+}
+
+
+/* donation section */
+.donationType{
+  margin: 0 25px 10px;
+}
+
+/* short donation section */
+.shortDetailsContainer{
+  padding: 70px 40px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 30px;
+  position: relative;
+  z-index: 4;
+}
+.donationIcon{
+  color: var(--nav);
+}
+.donationTypeText{
+  margin-left: 50px;
+}
+.downArrow{
+  margin-left: 290px;
+}
+.downArrow i{
+  /* font-size: 4rem; */
+  color: var(--nav);
+}
+
+/* more donation details and animation */
+.moreDetailsContainer{
+  background-color: white;
+  border-radius: 0 0 30px 30px;
+  padding: 0 50px 30px;
+  display: none;
+  position: relative;
+  z-index: 3;
+}
+.show{
+  display: block !important;
+  animation: mymove 0.5s 1;
+}
+@keyframes mymove {
+  0% {
+    opacity: 0;
+  transform: translateY(-210px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0;);
+  }
+}
+.allSideCurveBorder{
+  border-radius: 30px 30px 0 0 !important;
+}
+.moreDetailsContainer input{
+  margin: 40px 0 20px 0;
+  font-size: 3rem;
+  padding: 20px 10px 20px 30px;
+  border: 2px solid black;
+  border-right: 0 !important;
+  border-radius: 30px 0 0 30px;
+  outline: none;
+}
+
+/* placeholder color */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: lightgrey;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: lightgrey;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: lightgrey;
+}
+
+
+.moreDetailsContainer button{
+  margin-left: -10px;
+  font-size: 3rem;
+  padding: 20px 40px;
+  border-radius: 0 30px 30px 0;
+  border: 2px solid black;
+  border-left: 0 !important;
+}
+.moreDetailsContainer span{
+  font-size: 18px;
+}
+
+/* menu bar section */
+.menuBar{
+  background-color: #ffffff;
+  padding: 35px 0;
+  color: #a9adb1;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 0 10px 0 grey;
+  position: fixed;
+  bottom: 0;
+  z-index: 5;
+  width: 100%;
+}
+.menuBar i:hover{
+  color: #505fb1;
+}
+
+
+
+/* test section */
+.test{
+  height: 10rem;
+}
